@@ -1,7 +1,7 @@
 # IFD
 This plugin allows you to enable the item frame dupe (IFD) on your server. The plugin is based on SweetAnarchy's IFD plugin.
 
-This plugin has only been tested with paper, but bukkit and maybe spigot support might be coming later.
+This plugin supports both spigot and paper servers.
 
 ## Options
 

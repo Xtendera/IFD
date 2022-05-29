@@ -5,6 +5,4 @@ This plugin has only been tested with paper, but bukkit and maybe spigot support
 
 ## Options
 
-The only options right now are `dupeEnabled` and `dupeChance`. They can be modified through the config.yml file located in the plugins -> IFD folder. `dupeEnabled` controls if the dupe works at all, and `dupeChance` sets the percentage of the time this dupe will work. `dupeChance` **HAS** to be a number between 0 and 100. You can effectivly disable the dupe by setting `dupeChance` to 0, but changing `dupeEnabled` is more resource efficiant because it doesn't load the dupe class into memory.
-
-By defualt, `dupeEnabled` is set to true and `dupeChance` is set to 5 (which is the dupe rate on SweetAnarchy most of the time).
+The is only one option right now: `dupeChance`. This controls, between 0 and 100, how likely it is for the dupe to work. If it is set to zero or less, the dupe is not loaded at all to preserve resources. If it is set to more than 100, then the value is automatically set to 5, which is the defualt dupe chance on the SweetAnarchy server.

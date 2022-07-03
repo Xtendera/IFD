@@ -40,7 +40,7 @@
                         </goals>
                         <configuration>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
-                            <outputFile>/home/ashray/Documents/Spigot1.18.2/plugins/IFD.jar</outputFile>
+                            <outputFile>./build/IFD.jar</outputFile>
                         </configuration>
                     </execution>
                 </executions>

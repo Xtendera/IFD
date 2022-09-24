@@ -1,6 +1,6 @@
 name: IFD
 version: '${project.version}'
 main: com.xtendera.IFD
-api-version: 1.18
+api-version: 1.19
 authors: [ AshrayShah ]
 description: Enables the Item Frame Dupe, inspired by the SweetAnarchy Server!

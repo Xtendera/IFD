@@ -12,7 +12,7 @@ import org.bukkit.inventory.ItemStack;
 import java.util.Random;
 
 public class ItemFrameHandler implements Listener {
-    IFD IFDInstance = null;
+    IFD IFDInstance;
     public ItemFrameHandler(IFD plugin) {
         Bukkit.getPluginManager().registerEvents(this, plugin);
         IFDInstance = plugin;
@@ -22,7 +22,7 @@ public class ItemFrameHandler implements Listener {
         if(event.getEntity() instanceof ItemFrame) {
             Random rand = new Random();
             int chance = rand.nextInt(100);
-            if(chance < IFDInstance.getConfigFile().getInt("dupeChance")) {
+            if(chance < IFDInstance.getConfig().getInt("dupeChance")) {
                 ItemFrame FrameEntity = (ItemFrame) event.getEntity();
                 ItemStack dupeItem = FrameEntity.getItem().clone();
                 World frameWorld = FrameEntity.getWorld();
